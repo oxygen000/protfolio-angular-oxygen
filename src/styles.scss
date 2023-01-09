@@ -2,5 +2,37 @@
 *{
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
     background: #222831;
+
+}
+html{
+    font-size: 62.5%;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    
+    
+    &::-webkit-scrollbar{
+        width: 0.5rem;
+        
+    }
+    
+    &::-webkit-scrollbar-track{
+        background: #222831;
+    }
+    &::-webkit-scrollbar-thumb{
+        background: #038d94;
+        border-radius: 60px;
+    }
+    &::-webkit-scrollbar-thumb:hover{
+        background: #05666b;
+    }
+    
 }

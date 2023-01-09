@@ -1,39 +1,22 @@
 
 $green:#219150;
-$black:#10221d;
-$white:#fff;
+$blue:#00ADB5;
+$white:#ffff;
 $light-bg:#eee;
-$border:.2rem solid $black;
 $box-shadow:0 .5rem 1rem rgba(0,0,0,.1);@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Moon+Dance&family=Rubik+Bubbles&display=swap');
 *{
     margin: 0;
     padding: 0;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+    text-transform: capitalize;
+    -webkit-transition: .2s linear;
+    transition: .2s linear;
     //font-family: 'Dancing Script', cursive;
     //font-family: 'Moon Dance', cursive;
     //font-family: 'Rubik Bubbles', cursive;
-}
-@mixin grid($val) {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax($val,1fr));
-    gap:1.5rem;
-    
-} 
-html{
-    font-size: 62.5%;
-    overflow: auto;
-    scroll-behavior: smooth;
-    scroll-padding-top: 5rem;
-
-
-    &::-webkit-scrollbar{
-        width: 1rem;
-    }
-    &::-webkit-scrollbar-track{
-        background: #ffffff;
-    }
-    &::-webkit-scrollbar-thumb{
-        background: #00ADB5;
-    }
 }
 //nav bar //
 nav{
@@ -106,7 +89,9 @@ a{
     grid-column: 4;
     text-align: center;
 }
-.download{
+.download{ 
+    font-size: 16px;
+    text-decoration: none;
     margin-left: 250px;
     margin-top: 350px;
     font-family: 'Rubik Bubbles', cursive;
@@ -121,12 +106,14 @@ a{
     grid-column: 2;
     grid-row: 1;
     background-color: #393E46;
+    box-shadow: $box-shadow;
     cursor:pointer;
     &:hover{
         background-color: #25282c;
     }
     &:active{
         background-color: #151516;
+        
     }
     svg{
         grid-column:2;
@@ -136,6 +123,8 @@ a{
     
 }
 .hire-me{
+    box-shadow: $box-shadow;
+    font-size: 16px;
     margin-top: 350px;
     font-family: 'Rubik Bubbles', cursive;
     border: none;
@@ -184,5 +173,3 @@ a{
         display: grid;
         grid-row: 1;
     }
-
-    
