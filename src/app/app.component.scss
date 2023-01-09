@@ -1,5 +1,5 @@
 
-$green:#219150;
+$yellow:#ffff00e5;
 $blue:#00ADB5;
 $white:#ffff;
 $light-bg:#eee;
@@ -30,7 +30,7 @@ height: 50px;
 
 samp{
     margin-left: 15px;
-    color: #ffff00e5;
+    color: #ffff00e5 ;
     font-size: 30px;
     font-family: 'Moon Dance', cursive;
 }
@@ -53,10 +53,16 @@ a{
 }
 //end nav bar//
 //home//
+.hhh{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
 .home{
+    margin-top: 150px;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-template-rows: repeat(4, 1fr);
+    grid-column: 4;
 }
 .me-home{
     margin-top:80px;
@@ -173,3 +179,31 @@ a{
         display: grid;
         grid-row: 1;
     }
+//end home //
+// About Me //
+.about-me{
+    margin-top: 185px;
+    display: grid;
+    grid-row: 2;
+    grid-column: 4;
+    width: 98vw;
+    background-image: url(../assets/back3.svg);
+    h1{
+        margin-left: 100px;
+        text-align: center;
+        font-family:'Dancing Script', cursive;
+        margin-top: 150px;
+        display: flex;
+        width: 550px;
+        height: 0;
+        font-size: 64px;
+        color: $white;
+    }
+    samp{
+        font-family:'Dancing Script', cursive;
+        margin-top: 15px;
+        margin-left: 15px;
+        color: $blue ;
+    }
+}
+//End  About Me //
