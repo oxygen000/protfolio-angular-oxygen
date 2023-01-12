@@ -4,6 +4,7 @@ $blue:#00ADB5;
 $white:#ffff;
 $light-bg:#eee;
 $box-shadow:0 .5rem 1rem rgba(0,0,0,.1);@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Moon+Dance&family=Rubik+Bubbles&display=swap');
+$text-shadow: 6px 5px 8px #000000;;
 *{
     margin: 0;
     padding: 0;
@@ -25,12 +26,12 @@ align-items: center;
 display: flex;
 font-family:'Dancing Script', cursive;
 font-size: 16px;
-color: #ffff;
+color: $white;
 height: 50px;
 
 samp{
     margin-left: 15px;
-    color: #ffff00e5 ;
+    color: $yellow ;
     font-size: 30px;
     font-family: 'Moon Dance', cursive;
 }
@@ -43,17 +44,17 @@ samp{
 a{
     
     margin-left: 15px;
-    color: #ffff;
+    color: $white;
     text-decoration: none;
     &:hover{
-        color: #ffff00e5;
+        color: $yellow;
     }
 
 }
 }
 //end nav bar//
 //home//
-.hhh{
+.top-home{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(3, 1fr);
@@ -62,7 +63,7 @@ a{
     margin-top: 150px;
     display: grid;
     grid-template-columns: repeat(8, 1fr);
-    grid-column: 4;
+    grid-column: 3;
 }
 .me-home{
     margin-top:80px;
@@ -107,13 +108,15 @@ a{
     text-align: center;
     height: 47px;
     width: 223px;
-    color: #ffff;
+    color: $white;
     display: grid;
     grid-column: 2;
     grid-row: 1;
     background-color: #393E46;
     box-shadow: $box-shadow;
+    text-shadow: $text-shadow;
     cursor:pointer;
+    
     &:hover{
         background-color: #25282c;
     }
@@ -129,6 +132,7 @@ a{
     
 }
 .hire-me{
+    text-shadow: $text-shadow;
     box-shadow: $box-shadow;
     font-size: 16px;
     margin-top: 350px;
@@ -139,7 +143,7 @@ a{
     text-align: center;
     height: 47px;
     width: 223px;
-    color: #ffff;
+    color: $white;
     display: grid;
     grid-column: 2;
     grid-row: 1;
@@ -157,7 +161,7 @@ a{
         height: 0;
         width: 460px;
         font-size: 70px;
-        color: #ffff;
+        color:$white;
         display: grid;
         grid-column: 2;
         grid-row: 1;
@@ -167,7 +171,7 @@ a{
         height: 0;
         width: 460px;
         font-size: 70px;
-        color: #00ADB5;
+        color: $blue;
         display: grid;
         grid-column: 2;
         grid-row: 1;
@@ -180,19 +184,28 @@ a{
         grid-row: 1;
     }
 //end home //
-// About Me //
+//About Me//
 .about-me{
     margin-top: 185px;
     display: grid;
     grid-row: 2;
-    grid-column: 4;
+    grid-column: 3;
+    width: 98vw;
+}
+//end About Me//
+// My Projects //
+.my-projects{
+    margin-top: 185px;
+    display: grid;
+    grid-row: 3;
+    grid-column: 3;
     width: 98vw;
     background-image: url(../assets/back3.svg);
     h1{
         margin-left: 100px;
         text-align: center;
         font-family:'Dancing Script', cursive;
-        margin-top: 150px;
+        margin-top: 90px;
         display: flex;
         width: 550px;
         height: 0;
@@ -205,5 +218,41 @@ a{
         margin-left: 15px;
         color: $blue ;
     }
+    .btns{
+        width: 500px;
+        height: 0;
+        background: none;
+    }
+    .all{
+        margin-left: 25px;
+        text-shadow: $text-shadow;
+        box-shadow: $box-shadow;
+        font-size: 16px;
+        font-family: 'Rubik Bubbles', cursive;
+        border: none;
+        border-radius: 24px;
+        align-items: center;
+        text-align: center;
+        height: 47px;
+        width: 88px;
+        color: $white;
+        background-color: $blue;
+        cursor:pointer;
+        &:hover{
+            background-color: #058e96;
+        }
+        &:active{
+            background-color: #05575c;
+        }
+    }
+    .store{
+        background:#393e4680;
+    }
+    .moves{
+        background: #393e4680;    
+    }
+    .games{
+        background: #393e4680;    
+    }
 }
-//End  About Me //
+//End  My Projects //
