@@ -6,6 +6,7 @@ $light-bg:#eee;
 $box-shadow:0 .5rem 1rem rgba(0,0,0,.1);@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Moon+Dance&family=Rubik+Bubbles&display=swap');
 $text-shadow: 6px 5px 8px #000000;;
 *{
+    background: #222831;
     margin: 0;
     padding: 0;
     -webkit-box-sizing: border-box;
@@ -14,7 +15,8 @@ $text-shadow: 6px 5px 8px #000000;;
     text-decoration: none;
     text-transform: capitalize;
     -webkit-transition: .2s linear;
-    transition: .2s linear;
+    transition: .2s ease;
+    flex-direction: row;
     //font-family: 'Dancing Script', cursive;
     //font-family: 'Moon Dance', cursive;
     //font-family: 'Rubik Bubbles', cursive;
@@ -232,6 +234,7 @@ a{
 //end About Me//
 // My Projects //
 .my-projects{
+    height: 1024px;
     margin-top: 185px;
     display: grid;
     grid-row: 3;
@@ -256,14 +259,19 @@ a{
         color: $blue ;
     }
     .btns{
+        margin-left: 60px;
+        margin-top: 60px;
         width: 500px;
         height: 0;
         background: none;
+        transition: 0.5s;
+        grid-column: 1;
+        grid-row: 2;
     }
     .all{
+        transition: 0.5s ease;
         margin-left: 25px;
         text-shadow: $text-shadow;
-        box-shadow: $box-shadow;
         font-size: 16px;
         font-family: 'Rubik Bubbles', cursive;
         border: none;
@@ -286,10 +294,123 @@ a{
         background:#393e4680;
     }
     .moves{
-        background: #393e4680;    
+        background: #393e4680;
     }
     .games{
-        background: #393e4680;    
+        background: #393e4680;
+    }
+    .cards{
+        margin-left: 200px;
+        margin-top: 210px;
+        display: flex;
+        grid-column: 1;
+        grid-row: 2;
+        background: none;
+    }
+    .card-store{
+        box-shadow: $box-shadow;
+        border-radius: 16px;
+        align-items: center;
+        text-align: center;
+        grid-column: 1;
+        grid-row: 1;
+        width: 368px;
+        height: 280px;
+        background: #393e465e;
+        cursor: pointer;
+        a{
+            background: none;
+            
+        }
+        fa-icon{
+            margin-top: 45px;
+            width: 265px;
+            height: 158px;
+            font-size: 190px;
+            color: $blue;
+            background: none;
+        
+        }
+        &:hover{
+            background: #393e46ad;    
+        }
+    }
+    .card-moves{
+        box-shadow: $box-shadow;
+        cursor: pointer;
+        border-radius: 16px;
+        margin-left: 30px;
+        align-items: center;
+        text-align: center;
+        grid-column: 1;
+        grid-row: 1;
+        width: 368px;
+        height: 280px;
+        background: #393e465e;
+        a{
+            background: none;
+        }
+        fa-icon{
+            font-size: 190px;
+            color: $blue;
+            background: none;
+        }
+        &:hover{
+            background: #393e46ad;    
+        }
+
+    }
+    .card-games{
+        box-shadow: $box-shadow;
+        cursor: pointer;
+        border-radius: 16px;
+        margin-left: 30px;
+        align-items: center;
+        text-align: center;
+        grid-column: 1;
+        grid-row: 1;
+        width: 368px;
+        height: 280px;
+        background: #393e465e;
+        a{
+            background: none;
+        }
+        fa-icon{
+            font-size: 190px;
+            color: $blue;
+            background: none;
+        }
+        &:hover{
+            background: #393e46ad;    
+        }
+
     }
 }
 //End  My Projects //
+@media (max-width:600px) {
+    *{
+        flex-direction: column;
+    }
+}
+//footer//
+footer{
+    text-align: center;
+    align-items: center;
+    height: 400px;
+    display: grid;
+    grid-row: 4;
+    grid-column: 3;
+    width: 98vw;
+    svg{
+        cursor: pointer;
+        margin-left: 20px;
+        box-shadow: $box-shadow;
+        fill: $blue;
+        &:hover{
+            fill: #05575c;
+        }
+    }
+    
+}
+
+//end footer//
