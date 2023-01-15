@@ -116,7 +116,6 @@ a{
     box-shadow: $box-shadow;
     text-shadow: $text-shadow;
     cursor:pointer;
-    
     &:hover{
         background-color: #25282c;
     }
@@ -127,6 +126,8 @@ a{
     svg{
         grid-column:2;
         background: none;
+        box-shadow: $box-shadow;
+        text-shadow: $text-shadow; 
         
     }
     
@@ -150,7 +151,7 @@ a{
     background-color: #00ADB5;
     cursor:pointer;
     &:hover{
-        background-color: #058e96;
+        background-color: #058188;
     }
     &:active{
         background-color: #05575c;
@@ -191,6 +192,42 @@ a{
     grid-row: 2;
     grid-column: 3;
     width: 98vw;
+    img{
+        display: grid;
+        grid-row: 1;
+        grid-column: 4;
+    }
+    .ander2{
+        display: grid;
+        grid-row: 1;
+        grid-column: 4;
+        margin-top: 440px;
+        margin-left: 50px;
+        background: none;
+    }
+    p{
+        margin-top: 16px;
+        color: $white;
+        grid-row: 1;
+        grid-column: 3;
+        width: 389px;
+        height: 189px;
+        font-size: 18px;
+        font-family: 'Rubik Bubbles', cursive;
+    }
+    h1{
+        display: flex;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 64px;
+        color: $white;
+        samp{
+            color: $blue;
+            margin-left: 15px;
+        }
+    }
+    .prg{
+        margin-left: 96px;
+    }
 }
 //end About Me//
 // My Projects //
